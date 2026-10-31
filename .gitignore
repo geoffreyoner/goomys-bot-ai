@@ -1,0 +1,27 @@
+# Dependensi
+node_modules/
+
+# Secret dan konfigurasi lokal
+.env
+.env.*
+!.env.example
+
+# Database lokal (termasuk file WAL/SHM)
+data/*
+!data/.gitkeep
+
+# Log
+logs/*
+!logs/.gitkeep
+*.log
+npm-debug.log*
+
+# Output pengujian dan cache
+coverage/
+.nyc_output/
+
+# Editor dan OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

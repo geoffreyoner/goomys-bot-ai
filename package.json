@@ -1,0 +1,29 @@
+{
+  "name": "goomys-ai",
+  "version": "1.0.0",
+  "description": "Goomys AI - Discord AI Chat Bot dengan multi-provider support",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "deploy": "node scripts/deploy-commands.js",
+    "test": "node --test tests/unit/",
+    "test:integration": "node --test tests/integration/"
+  },
+  "dependencies": {
+    "@google/genai": "^2.32.0",
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.5",
+    "openai": "^6.49.0",
+    "pino": "^9.5.0",
+    "zod": "^4.6.6"
+  },
+  "overrides": {
+    "undici": "^6.24.1"
+  },
+  "engines": {
+    "node": ">=22.13"
+  },
+  "private": true,
+  "license": "MIT"
+}
